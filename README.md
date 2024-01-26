@@ -19,11 +19,28 @@ git clone https://github.com/Nyanziba/AutoFrontierSearch_ros2-humble.git
 cd ~/ros2_ws
 colcon build --packages-select frontier_exploration
 ```
-Source the environment and run the frontier_exploration node:
+## Source the environment and run the frontier_exploration node:
 
 ```
 cd ~/ros2_ws/install/setup.bash
 ros2 run frontier_exploration exploration_node
+```
+## Sample
+Terminal1
+```
+ros2 launch nav2_bringup navigation_launch.py
+```
+Terminal2
+```
+ros2 launch slam_toolbox online_async_launch.py
+```
+Terminal3
+```
+ros2 launch nav2_bringup rviz_launch.py
+```
+Terminal4
+```
+ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 ## Nodes
 * exploration_node
